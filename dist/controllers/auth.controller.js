@@ -14,6 +14,7 @@ const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 const testRoute = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { id } = req.params;
+    console.log(req.body);
     try {
         const user = yield prisma.user.findFirst({
             where: {

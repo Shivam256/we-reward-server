@@ -5,6 +5,7 @@ const prisma = new PrismaClient();
 
 export const testRoute = async (req: Request, res: Response) => {
   const { id } = req.params;
+  console.log(req.body);
   try {
     const user = await prisma.user.findFirst({
       where: {
