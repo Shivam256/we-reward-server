@@ -4,6 +4,6 @@ const router = express.Router();
 
 import { testRoute } from "../controllers/auth.controller";
 
-router.post("/user/:id", testRoute);
+router.post("/user", testRoute);
 
 export default router;

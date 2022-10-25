@@ -74,7 +74,7 @@ model Project {
     ownerId     String  @db.ObjectId
     image       String?
     bannerImage String?
-    projectKey  String?
+    projectKey  String  @unique
     projectId   String?
 }
 
